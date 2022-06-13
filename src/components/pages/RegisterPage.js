@@ -11,19 +11,40 @@ export default function SignUpPage() {
             <h5>Create your personal account</h5>
             <form action="/home">
                 <p>
-                    <label>Username</label><br/>
+                    <label>First Name</label><br/>
                     <input type="text" name="first_name" required />
+                </p>
+                <p>
+                    <label>Last Name</label><br/>
+                    <input type="text" name="last_name" required />
                 </p>
                 <p>
                     <label>Email address</label><br/>
                     <input type="email" name="email" required />
                 </p>
                 <p>
-                    <label>Password</label><br/>
-                    <input type="password" name="password" requiredc />
+                    <label>Phone number</label><br/>
+                    <input type="number" name="phone_no" required />
                 </p>
                 <p>
-                    <input type="checkbox" name="checkbox" id="checkbox" required /> <span>I agree all statements in <a href="https://google.com" target="_blank" rel="noopener noreferrer">terms of service</a></span>.
+                    <label>Birthday</label><br/>
+                    <input type="date" name="phone_no" required />
+                </p>
+                {/* <p>
+                <label>Choose your gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                </p> */}
+
+                <p>
+                    <label>Password</label><br/>
+                    <input type="password" name="password" required />
+                </p>
+                <p>
+                    <label>Confirm Password</label><br/>
+                    <input type="password" name="confirm_password" required />
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Register</button>
